@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planning - IronWorks Fitness</title>
@@ -56,6 +57,7 @@
     </style>
 </head>
 <body>
+
     <div class="blur-background"></div>
     <div class="container">
         <h1>Programmes d'Entraînement</h1>
@@ -136,7 +138,7 @@
             bottom: 20px;
             left: 50%; /* Centrage horizontal */
             transform: translateX(-50%); /* Centrage horizontal */
-            background-color: #2ecc71; /* Couleur verte en exemple */
+            background-color: #fa8805; /* Couleur verte en exemple */
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
@@ -145,6 +147,8 @@
         }
         .call-to-action:hover {
             transform: scale(1.1) translateX(-50%); /* Zoom lorsque survolé avec centrage horizontal */
+            box-shadow: 0 0 20px#fa8805;
+            transition: 0.3s;
         }
     </style>
 </head>
@@ -153,4 +157,60 @@
         Pour seulement 2,99$ votre transformation physique est assurée
     </a>
 </body>
+<button id="myButton">
+    Retour 
+</button>
+
+<script>
+    document.getElementById("myButton").addEventListener("click", function() {
+        window.location.href = "chatgpt.html";
+    });
+</script>
+
+<style>
+    body
+{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+
+}
+button{
+    padding: 20px 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 0px;
+  background: transparent;
+  position: relative;
+  transition: all .2s;
+  overflow: hidden;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px -0px 0px 0px rgba(243, 77, 0, 0.5), 0px 0px 0px 0px rgba(248, 219, 0, 0.5);
+}
+button::after {
+  content: '';
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  background-image: linear-gradient(225deg, #fb9700 0%, #ff4800 50%, #f8c600 100%);
+  z-index: -1;
+  transition: all .5s;
+}
+button:hover::after {
+  transform: rotate(150deg);
+}
+
+button:hover {
+  transform: translate(0,-6px);
+  box-shadow: 0px -0px 0px 0px rgba(255, 102, 0, 0.5), 0px 0px 0px 0px rgba(255, 102, 0, 0.5);
+}
+::selection {
+    background-color: #fa8805; /* Couleur de fond de la sélection */
+    color: #ffffff; /* Couleur du texte de la sélection */
+}
+</style>
 </html>
