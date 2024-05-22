@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
     scroll-behavior: smooth;
+    
 }
 
 p{
@@ -13,7 +14,7 @@ p{
 }
 
 
-
+body {background-color: rgb(51, 49, 48);}
 
 
 .btn-reserve{
@@ -40,15 +41,6 @@ p{
     background: url(images/carousel-1.jpg);
     background-size: cover;
 }
-.page1 video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
 .page1 .contenu{
     max-width: 70%;
     text-align: center;
@@ -57,7 +49,7 @@ p{
     color: #fff;
     font-size: 3em;
     text-transform: capitalize;
-    text-shadow:0 0 50px #d87710;
+   
 }
 .contenu p:nth-child(2){
     color: #ffff;
@@ -84,11 +76,7 @@ letter-spacing: 4px;
 box-shadow: 0 0 50px rgb(255, 174, 0); 
 transform: scale(1.1);
 }
-body {background-color: rgb(51, 49, 48);}
-.section{
-    background-image: url(./images/backk.jpg);
-    background-size: cover;
-}
+
 section{
     padding: 100px;
 }
@@ -151,12 +139,12 @@ section{
 
 .equipes .contenu{
     display: flex;
+    flex-direction: row;
     margin-top: 40px;
     width: 100%;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+   
 }
 
 .equipes .contenu .box{
@@ -173,7 +161,7 @@ section{
 .equipes .contenu .box:hover {
     transform: scale(1.2); 
     box-shadow: 0 0 50px rgb(255, 119, 0); 
-    transition: 1s;
+    transition: 0.5s;
 }
 .equipes .contenu .box .imbox{
     width: 80px;
@@ -217,7 +205,33 @@ section{
     color: #fff;
 }
 ::selection {
-    background-color: #fa8805; /* Couleur de fond de la sélection */
-    color: #fff; /* Couleur du texte de la sélection */
+    background-color: #fa8805; 
+    color: #fff; 
+}
+ 
+ .btn-contact {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
+.btn-contact:hover {
+    background-color: #ff7f00; 
+}
+
+.btn-contact-coachs {
+    background-color: transparent;
+    border: 2px solid orange;
+    color: orange;
+}
+
+.btn-contact-coachs:hover {
+    background-color: orange;
+    color: white;
+}

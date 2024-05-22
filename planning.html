@@ -5,56 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planning - IronWorks Fitness</title>
-    <style>
-        body {
-            background-image: url('https://img.freepik.com/photos-gratuite/halteres-sol-salle-sport-ai-generative_123827-23744.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Prend toute la hauteur de la fenêtre */
-        }
-        .blur-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('https://img.freepik.com/photos-gratuite/halteres-sol-salle-sport-ai-generative_123827-23744.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            filter: blur(10px); /* Flou de l'image d'arrière-plan */
-            z-index: -1; /* Met l'image d'arrière-plan derrière le contenu */
-        }
-        .container {
-            background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour le contenu */
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 800px;
-            text-align: center;
-            color: white;
-        }
-        .programmes {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .programme {
-            width: calc(33.33% - 10px);
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            margin: 15px; /* Espacement de 15 pixels autour de chaque programme */
-            text-align: left; /* Alignement du texte à gauche */
-        }
-        /* Ajoutez d'autres styles CSS pour votre contenu si nécessaire */
-    </style>
+    <link rel="stylesheet" href="planning.css">
+  
 </head>
 <body>
 
@@ -123,36 +75,11 @@
             </div>
         </div>
     </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planning - IronWorks Fitness</title>
-    <style>
-        /* Définir la couleur de fond du bouton en fonction du thème de la page */
-        .call-to-action {
-            position: fixed;
-            bottom: 20px;
-            left: 50%; /* Centrage horizontal */
-            transform: translateX(-50%); /* Centrage horizontal */
-            background-color: #fa8805; /* Couleur verte en exemple */
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: transform 0.3s ease; /* Transition pour l'animation */
-            z-index: 9999; /* Assure que le bouton est au-dessus du contenu */
-        }
-        .call-to-action:hover {
-            transform: scale(1.1) translateX(-50%); /* Zoom lorsque survolé avec centrage horizontal */
-            box-shadow: 0 0 20px#fa8805;
-            transition: 0.3s;
-        }
-    </style>
-</head>
-<body>
+
+
+
+   
+
     <a href="#" class="call-to-action">
         Pour seulement 2,99$ votre transformation physique est assurée
     </a>
@@ -167,50 +94,4 @@
     });
 </script>
 
-<style>
-    body
-{
-display: flex;
-align-items: center;
-justify-content: center;
-height: 100vh;
-
-}
-button{
-    padding: 20px 50px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  border: 0px;
-  background: transparent;
-  position: relative;
-  transition: all .2s;
-  overflow: hidden;
-  color: #fff;
-  border-radius: 30px;
-  box-shadow: 0px -0px 0px 0px rgba(243, 77, 0, 0.5), 0px 0px 0px 0px rgba(248, 219, 0, 0.5);
-}
-button::after {
-  content: '';
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: -50px;
-  left: -100px;
-  background-image: linear-gradient(225deg, #fb9700 0%, #ff4800 50%, #f8c600 100%);
-  z-index: -1;
-  transition: all .5s;
-}
-button:hover::after {
-  transform: rotate(150deg);
-}
-
-button:hover {
-  transform: translate(0,-6px);
-  box-shadow: 0px -0px 0px 0px rgba(255, 102, 0, 0.5), 0px 0px 0px 0px rgba(255, 102, 0, 0.5);
-}
-::selection {
-    background-color: #fa8805; /* Couleur de fond de la sélection */
-    color: #ffffff; /* Couleur du texte de la sélection */
-}
-</style>
 </html>
